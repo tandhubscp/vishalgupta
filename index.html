@@ -23,7 +23,7 @@
       "name": "Vishal Gupta",
       "alternateName": "JustVishalGupta",
       "url": "https://justvishalgupta.com",
-      "jobTitle": ["Founder", "Music Producer", "Author"],
+      "jobTitle": ["Founder", "Managing Director", "Producer", "Technologist"],
       "image": "https://justvishalgupta.com/profile.jpg",
       "email": "justvishalgupta@gmail.com",
       "sameAs": [
@@ -33,9 +33,9 @@
         "https://www.imdb.com/name/nm16995245/"
       ],
       "worksFor": [
+        { "@type": "Organization", "name": "Voxmelo" },
         { "@type": "Organization", "name": "Helvica Pharma" },
-        { "@type": "Organization", "name": "Vizadica Health" },
-        { "@type": "Organization", "name": "Voxmelo" }
+        { "@type": "Organization", "name": "Tandhubs" }
       ],
       "author": {
         "@type": "Book",
@@ -138,7 +138,7 @@
         .profile-photo-wrapper {
             margin-bottom: 30px;
             opacity: 0; 
-            animation: fadeUp 0.8s forwards; /* Fades in first */
+            animation: fadeUp 0.8s forwards; 
         }
         
         .profile-photo {
@@ -185,12 +185,21 @@
         }
         .btn-primary:hover { transform: scale(1.05); }
 
-        /* --- 6. VENTURES GRID (THE ECOSYSTEM) --- */
+        /* --- 6. ABOUT SECTION & VENTURES --- */
         .section { padding: var(--section-padding); max-width: var(--container-width); margin: 0 auto; }
         
         .section-header { margin-bottom: 60px; }
         .section-title { font-size: 2.5rem; font-weight: 700; margin-bottom: 10px; }
         .section-subtitle { color: var(--text-muted); font-size: 1.1rem; }
+
+        .about-card {
+            background: var(--bg-card); border: 1px solid var(--border-glass);
+            border-radius: var(--radius); padding: 50px;
+            font-size: 1.1rem; color: var(--text-muted); line-height: 1.8;
+        }
+        .about-card p { margin-bottom: 20px; }
+        .about-card p:last-child { margin-bottom: 0; }
+        .about-card strong { color: white; font-weight: 600; }
 
         .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
 
@@ -304,6 +313,7 @@
             </div>
 
             <ul class="nav-menu" id="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#ventures" class="nav-link">Ventures</a></li>
                 <li><a href="#book" class="nav-link">Book</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
@@ -317,17 +327,35 @@
             <div class="profile-photo-wrapper">
                 <img src="profile.jpg" alt="Vishal Gupta" class="profile-photo">
             </div>
-            <span class="hero-eyebrow">Producer • Musical Artist • Founder • Entrepreneur</span>
+            <span class="hero-eyebrow">Managing Director of Voxmelo • Founder • Technologist • Producer</span>
             <h1>Vishal Gupta.</h1>
             <p>
                 Architecting the future at the intersection of pharmaceutical innovation, 
                 biological ecosystems, and cinematic audio intelligence.
             </p>
-            <a href="#ventures" class="btn-primary">
-                View Ecosystem <span>↓</span>
+            <a href="#about" class="btn-primary">
+                Discover More <span>↓</span>
             </a>
         </div>
     </header>
+
+    <section id="about" class="section">
+        <div class="section-header reveal">
+            <h2 class="section-title">About Me</h2>
+            <p class="section-subtitle">Bridging the gap between technology, media, and healthcare.</p>
+        </div>
+        <div class="about-card reveal">
+            <p>
+                I am an Indian businessman, producer, technologist, and inherent multitasker driven by the pursuit of innovation across multiple industries. 
+            </p>
+            <p>
+                Currently, I serve as the <strong>Managing Director of Voxmelo Music</strong>, where we leverage cinematic audio synthesis to shape the future of digital media. Alongside my work in the music industry, I am the <strong>Founder of Tandhubs</strong> and <strong>Helvica Pharma</strong>, building precision healthcare solutions and advanced technological ecosystems.
+            </p>
+            <p>
+                Whether I am producing high-fidelity audio, architecting new software platforms, or scaling pharmaceutical ventures, my goal remains the same: to create impactful, future-ready solutions that push boundaries.
+            </p>
+        </div>
+    </section>
 
     <section id="ventures" class="section">
         <div class="section-header reveal">
